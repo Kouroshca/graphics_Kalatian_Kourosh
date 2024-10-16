@@ -1,7 +1,6 @@
 ﻿#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include "Math.h"
-
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -211,6 +210,5 @@ GLuint CreateProgram(GLuint vs, GLuint fs)
         glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
         std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
     }
-
     return shaderProgram;
 }
